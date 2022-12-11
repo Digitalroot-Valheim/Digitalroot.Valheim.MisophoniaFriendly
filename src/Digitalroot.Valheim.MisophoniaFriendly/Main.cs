@@ -4,7 +4,6 @@ using Digitalroot.Valheim.Common;
 using HarmonyLib;
 using JetBrains.Annotations;
 using Jotunn.Managers;
-using Jotunn.Utils;
 using System;
 using System.Reflection;
 using UnityEngine;
@@ -13,12 +12,8 @@ namespace Digitalroot.Valheim.MisophoniaFriendly
 {
   [BepInPlugin(Guid, Name, Version)]
   [BepInDependency(Jotunn.Main.ModGuid)]
-  public class Main : BaseUnityPlugin, ITraceableLogging
+  public partial class Main : BaseUnityPlugin, ITraceableLogging
   {
-    public const string Version = "1.0.1";
-    public const string Name = "Digitalroot Misophonia Friendly";
-    public const string Guid = "digitalroot.mods.misophoniafriendly";
-    public const string Namespace = "Digitalroot.Valheim" + nameof(MisophoniaFriendly);
     private Harmony _harmony;
     public static Main Instance;
 
@@ -34,7 +29,8 @@ namespace Digitalroot.Valheim.MisophoniaFriendly
       #else
       EnableTrace = false;
       #endif
-      Log.Trace(Main.Instance, $"{Main.Namespace}.{MethodBase.GetCurrentMethod().DeclaringType?.Name}.{MethodBase.GetCurrentMethod().Name}");
+      Log.RegisterSource(Instance);
+      Log.Trace(Instance, $"{Main.Namespace}.{MethodBase.GetCurrentMethod()?.DeclaringType?.Name}.{MethodBase.GetCurrentMethod()?.Name}");
     }
 
     [UsedImplicitly]
@@ -42,7 +38,7 @@ namespace Digitalroot.Valheim.MisophoniaFriendly
     {
       try
       {
-        Log.Trace(Main.Instance, $"{Main.Namespace}.{MethodBase.GetCurrentMethod().DeclaringType?.Name}.{MethodBase.GetCurrentMethod().Name}");
+        Log.Trace(Main.Instance, $"{Main.Namespace}.{MethodBase.GetCurrentMethod()?.DeclaringType?.Name}.{MethodBase.GetCurrentMethod()?.Name}");
         if (Common.Utils.IsHeadless()) return;
         PrefabManager.OnVanillaPrefabsAvailable += PrefabManagerOnVanillaPrefabsAvailable;
       }
@@ -57,7 +53,7 @@ namespace Digitalroot.Valheim.MisophoniaFriendly
     {
       try
       {
-        Log.Trace(Main.Instance, $"{Main.Namespace}.{MethodBase.GetCurrentMethod().DeclaringType?.Name}.{MethodBase.GetCurrentMethod().Name}");
+        Log.Trace(Main.Instance, $"{Main.Namespace}.{MethodBase.GetCurrentMethod()?.DeclaringType?.Name}.{MethodBase.GetCurrentMethod()?.Name}");
 
         var prefabNames = new[]
         {
@@ -65,6 +61,8 @@ namespace Digitalroot.Valheim.MisophoniaFriendly
           , Common.Names.Vanilla.PrefabNames.SfxPukeFemale
           , Common.Names.Vanilla.PrefabNames.SfxCreatureConsume
           , Common.Names.Vanilla.PrefabNames.SfxEat
+          , Common.Names.Vanilla.PrefabNames.SfxChickenEat
+          , Common.Names.Vanilla.PrefabNames.SfxHareIdleEating
         };
 
         foreach (var prefabName in prefabNames)

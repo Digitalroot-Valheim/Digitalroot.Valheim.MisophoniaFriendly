@@ -12,7 +12,7 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
-    <Copyright>Copyright © Digitalroot Technologies 2021 - 2022</Copyright>
+    <Copyright>Copyright © Digitalroot Technologies 2021 - 2023</Copyright>
     <PackageProjectUrl>https://github.com/Digitalroot-Valheim/Digitalroot.Valheim.PluginTemplate</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Digitalroot-Valheim/Digitalroot.Valheim.PluginTemplate</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
@@ -27,7 +27,7 @@
       https://nuget.bepinex.dev/v3/index.json;
       https://digitalroot-valheim-nuget.s3.us-west-2.amazonaws.com/index.json
     </RestoreAdditionalProjectSources>
-    <VersionPrefix>1.0.0</VersionPrefix>
+    <VersionPrefix>0.0.1</VersionPrefix>
     <Configurations>Debug;Release;DebugNoDeploy</Configurations>
   </PropertyGroup>
 
@@ -46,44 +46,33 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="BepInEx.Core" Version="5.4.16">
+    <PackageReference Include="BepInEx.Core" Version="[5.4.19]">
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="Digitalroot.Valheim.Build.Targets" Version="1.0.6">
+    <PackageReference Include="Digitalroot.Valheim.Build.Targets" Version="1.0.21">
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="Digitalroot.Valheim.Common.AssemblyInfo" Version="1.0.7">
-      <PrivateAssets>all</PrivateAssets>
-      <ExcludeAssets>runtime</ExcludeAssets>
-    </PackageReference>
-    <PackageReference Include="Digitalroot.Valheim.Common.Log" Version="1.1.14" />
-    <PackageReference Include="Digitalroot.Valheim.Common.Names" Version="1.4.7" />
-    <PackageReference Include="Digitalroot.Valheim.Common.References" Version="0.205.6">
-      <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
-    <PackageReference Include="Digitalroot.Valheim.Common.Utils" Version="1.0.17" />
-    <PackageReference Include="ErrorProne.NET.CoreAnalyzers" Version="0.1.2">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="JotunnLib" Version="2.4.4">
+    <PackageReference Include="Digitalroot.Valheim.Common.AssemblyInfo" Version="1.0.12">
       <PrivateAssets>all</PrivateAssets>
       <ExcludeAssets>runtime</ExcludeAssets>
       <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="HarmonyX" Version="2.6.1">
+    <PackageReference Include="Digitalroot.Valheim.Common.Log" Version="1.1.34" />
+    <PackageReference Include="Digitalroot.Valheim.Common.Names" Version="1.4.13" />
+    <PackageReference Include="Digitalroot.Valheim.Common.References" Version="0.212.14">
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="Fody" Version="6.6.0">
+    <PackageReference Include="Digitalroot.Valheim.Common.Utils" Version="1.0.26" />
+    <PackageReference Include="ErrorProne.NET.CoreAnalyzers" Version="0.1.2">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="ILMerge.Fody" Version="1.22.0">
+    <PackageReference Include="Fody" Version="[6.6.0]">
       <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="UnityEngine.Modules" Version="[2019.4.32]">
+    <PackageReference Include="ILMerge.Fody" Version="[1.22.0]">
       <PrivateAssets>all</PrivateAssets>
-      <ExcludeAssets>runtime</ExcludeAssets>
     </PackageReference>
   </ItemGroup>
 

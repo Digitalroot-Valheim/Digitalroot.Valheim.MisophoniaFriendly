@@ -15,6 +15,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{1960DCD1-3C51-48FF-BFF8-5FE4C3CBABB2}"
 	ProjectSection(SolutionItems) = preProject
 		..\.github\workflows\discord.yml = ..\.github\workflows\discord.yml
+		..\.github\workflows\nuget.autoupdate.yml = ..\.github\workflows\nuget.autoupdate.yml
 		..\.github\workflows\release.yml = ..\.github\workflows\release.yml
 	EndProjectSection
 EndProject
@@ -36,7 +37,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ico", "ico", "{C66A8E3B-31D
 		ico\ValheimRcon_color.png = ico\ValheimRcon_color.png
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Digitalroot.Valheim.MisophoniaFriendly", "Digitalroot.Valheim.MisophoniaFriendly\Digitalroot.Valheim.MisophoniaFriendly.csproj", "{468FB04C-8C92-4276-9390-C0D617013B69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Digitalroot.Valheim.MisophoniaFriendly", "Digitalroot.Valheim.MisophoniaFriendly\Digitalroot.Valheim.MisophoniaFriendly.csproj", "{468FB04C-8C92-4276-9390-C0D617013B69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{9DF1B207-0408-4D72-9634-0033DD677AE3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +54,12 @@ Global
 		{468FB04C-8C92-4276-9390-C0D617013B69}.DebugNoDeploy|Any CPU.Build.0 = DebugNoDeploy|Any CPU
 		{468FB04C-8C92-4276-9390-C0D617013B69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{468FB04C-8C92-4276-9390-C0D617013B69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DF1B207-0408-4D72-9634-0033DD677AE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DF1B207-0408-4D72-9634-0033DD677AE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DF1B207-0408-4D72-9634-0033DD677AE3}.DebugNoDeploy|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DF1B207-0408-4D72-9634-0033DD677AE3}.DebugNoDeploy|Any CPU.Build.0 = Debug|Any CPU
+		{9DF1B207-0408-4D72-9634-0033DD677AE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DF1B207-0408-4D72-9634-0033DD677AE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
