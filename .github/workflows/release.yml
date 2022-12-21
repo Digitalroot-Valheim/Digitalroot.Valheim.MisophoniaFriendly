@@ -7,9 +7,11 @@ on:
   
   push:
     branches: [ main ] # Default release branch
-    paths:
-      - 'src/**'   
-      - '.github/workflows/**' 
+    paths-ignore:
+      - '.github/**'
+      - 'docs/**'
+      - '**/.ts/**'
+      - '**/.nx/**'
 
 env:
   DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
