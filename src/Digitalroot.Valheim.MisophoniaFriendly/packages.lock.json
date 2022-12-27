@@ -44,15 +44,15 @@
       },
       "Digitalroot.Valheim.Common.References": {
         "type": "Direct",
-        "requested": "[0.212.15, )",
-        "resolved": "0.212.15",
-        "contentHash": "UhIvrrr3VyhAv1/UuD90HWnuaWxkvkj6h1ide/hhZevlyZMYyRxtRoR+Tj+/o0sAg4skYyTAVgp2Fh5vvt3HDQ=="
+        "requested": "[0.212.16, )",
+        "resolved": "0.212.16",
+        "contentHash": "DPwx7/H5lUqEELUExNOT5WbEpjSrZ28dEP3hqwWkWeTRQWFThqBE2FNUSMjFu7DDpoqyiz/LHFKd8fa/SnAQvw=="
       },
       "Digitalroot.Valheim.Common.Utils": {
         "type": "Direct",
-        "requested": "[1.0.27, )",
-        "resolved": "1.0.27",
-        "contentHash": "GWeeAtDYRM9SXglfMDCh2wndMxvOTH9wID+RySw/X0kYLWmSL+en9yrU61Vw4xBuZrubB/i6erokiCkHn2MwGw==",
+        "requested": "[1.0.28, )",
+        "resolved": "1.0.28",
+        "contentHash": "OVuMMompe22BKW5Ce6IpjNAoQ/ys7umLMj6bTGNns0s3Q7ri8dMPZtUrzh/iLmIu6+n8TDryatDgxOX4JLkMzA==",
         "dependencies": {
           "Digitalroot.Valheim.Common.Log": "1.1.34"
         }
@@ -76,6 +76,15 @@
         "contentHash": "VCWQM8q7wZwHMgksBsFfbImRUmlgn7E6EKkrnUV86/keqBvMTjhlA7mBYtz6Dace8XsJYufYJvRP25uur5W5WA==",
         "dependencies": {
           "Fody": "6.3.0"
+        }
+      },
+      "Microsoft.NETFramework.ReferenceAssemblies": {
+        "type": "Direct",
+        "requested": "[1.0.2, )",
+        "resolved": "1.0.2",
+        "contentHash": "5/cSEVld+px/CuRrbohO/djfg6++eR6zGpy88MgqloXvkj//WXWpFZyu/OpkXPN0u5m+dN/EVwLNYFUxD4h2+A==",
+        "dependencies": {
+          "Microsoft.NETFramework.ReferenceAssemblies.net462": "1.0.2"
         }
       },
       "BepInEx.BaseLib": {
@@ -104,6 +113,11 @@
         "dependencies": {
           "MonoMod.RuntimeDetour": "21.12.13.1"
         }
+      },
+      "Microsoft.NETFramework.ReferenceAssemblies.net462": {
+        "type": "Transitive",
+        "resolved": "1.0.2",
+        "contentHash": "vnWMOt5+4SLOLu5hlB54LMK5OHqsX+5ekbo6vb7USvCM5uA4UKtATuMvIAw69ak62F94c+3895XwF5TcjjzpVw=="
       },
       "Mono.Cecil": {
         "type": "Transitive",
