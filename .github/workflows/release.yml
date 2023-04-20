@@ -4,7 +4,6 @@ concurrency: ci-${{ github.ref }}
 
 on:
   workflow_dispatch:
-  
   push:
     branches: [ main ] # Default release branch
     paths-ignore:
@@ -26,9 +25,15 @@ jobs:
       nexus-api-key: ${{ secrets.NEXUS_API_KEY }}
       nexus-cookie-nxid-header: ${{ secrets.NEXUS_COOKIE_HEADER_NEXUSID }}
       nexus-cookie-sid-header: ${{ secrets.NEXUS_COOKIE_HEADER_SID_DEVELOP }}
+      ts-api-key: ${{ secrets.TS_SERVICEACCOUNT }}
     with:
       sln-file-name: Digitalroot.Valheim.MisophoniaFriendly
       proj-file-name: Digitalroot.Valheim.MisophoniaFriendly
       is-nuget-package: false
       nexus-enable-upload: true
       nexus-mod-id: 1667
+      ts-enable-upload: true
+      ts-name: Misophonia_Friendly
+      ts-description: "Valheim mod to mute Misophonia triggering sounds."
+      ts-categories: "client-side tweaks" #https://thunderstore.io/api/experimental/community/valheim/category/
+      ts-dependencies: denikson-BepInExPack_Valheim@5.4.2105 ValheimModding-Jotunn@2.11.5 
