@@ -14,7 +14,6 @@ namespace Digitalroot.Valheim.MisophoniaFriendly
   [BepInDependency(Jotunn.Main.ModGuid)]
   public partial class Main : BaseUnityPlugin, ITraceableLogging
   {
-    private Harmony _harmony;
     public static Main Instance;
 
     public readonly ConfigEntry<int> NexusId;
