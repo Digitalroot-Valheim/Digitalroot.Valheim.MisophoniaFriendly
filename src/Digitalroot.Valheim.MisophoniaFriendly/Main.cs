@@ -4,6 +4,7 @@ using Digitalroot.Valheim.Common;
 using HarmonyLib;
 using JetBrains.Annotations;
 using Jotunn.Managers;
+using Jotunn.Utils;
 using System;
 using System.Reflection;
 using UnityEngine;
