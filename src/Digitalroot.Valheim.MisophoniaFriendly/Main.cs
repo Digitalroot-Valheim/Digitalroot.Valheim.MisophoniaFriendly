@@ -13,7 +13,7 @@ namespace Digitalroot.Valheim.MisophoniaFriendly
 {
   [BepInPlugin(Guid, Name, Version)]
   [BepInDependency(Jotunn.Main.ModGuid)]
-  [NetworkCompatibility(CompatibilityLevel.NotEnforced)]
+  [NetworkCompatibility(CompatibilityLevel.NotEnforced, VersionStrictness.None)]
   public partial class Main : BaseUnityPlugin, ITraceableLogging
   {
     public static Main Instance;
