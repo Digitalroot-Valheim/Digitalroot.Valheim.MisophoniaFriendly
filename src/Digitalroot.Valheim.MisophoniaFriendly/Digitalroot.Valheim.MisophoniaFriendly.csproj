@@ -59,7 +59,7 @@
     </PackageReference>
     <PackageReference Include="Digitalroot.Valheim.Common.Log" Version="1.1.55" />
     <PackageReference Include="Digitalroot.Valheim.Common.Names" Version="1.4.40" />
-    <PackageReference Include="Digitalroot.Valheim.Common.References" Version="0.219.14">
+    <PackageReference Include="Digitalroot.Valheim.Common.References" Version="0.219.16">
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Digitalroot.Valheim.Common.Utils" Version="1.0.66" />
