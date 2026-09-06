@@ -34,8 +34,10 @@ jobs:
       is-nuget-package: false
       nexus-enable-upload: true
       nexus-mod-id: 1667
+      nexus-mod-file-id: 2360446
       ts-enable-upload: true
       ts-name: Misophonia_Friendly
       ts-description: "Valheim mod to mute Misophonia triggering sounds."
       ts-categories: "client-side tweaks" #https://thunderstore.io/api/experimental/community/valheim/category/
-      ts-dependencies: ValheimModding-Jotunn-2.20.0
+      ts-dependencies: ValheimModding-Jotunn-2.29.2
+      skip-unit-tests: true

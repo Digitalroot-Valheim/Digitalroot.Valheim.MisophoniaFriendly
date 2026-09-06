@@ -16,6 +16,7 @@ namespace Digitalroot.Valheim.MisophoniaFriendly
   [NetworkCompatibility(CompatibilityLevel.NotEnforced, VersionStrictness.None)]
   public partial class Main : BaseUnityPlugin, ITraceableLogging
   {
+    // ReSharper disable once MemberCanBePrivate.Global
     public static Main Instance;
 
     public readonly ConfigEntry<int> NexusId;
