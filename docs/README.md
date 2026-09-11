@@ -18,7 +18,7 @@ Mutes Misophonia triggering sounds.
 ### Configuration 
 Added a config for each sound. Toggleable in game if you use a config manager.
 
-### Sounds controled by mod
+### Target Sounds
 - SfxPukeMale
 - SfxPukeFemale
 - SfxCreatureConsume
