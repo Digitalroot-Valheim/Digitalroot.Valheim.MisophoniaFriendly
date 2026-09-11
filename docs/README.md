@@ -16,7 +16,20 @@ Mutes Misophonia triggering sounds.
 1. Extract the archive into &lt;Steam Location&gt;\steamapps\common\Valheim\BepInEx\plugins
 
 ### Configuration 
-- No need to configure.
+Added a config for each sound. Toggleable in game if you use a config manager.
+
+### Sounds controled by mod
+- SfxPukeMale
+- SfxPukeFemale
+- SfxCreatureConsume
+- SfxEat
+- SfxChickenEat
+- SfxHareIdleEating
+- SfxPickaxeHit
+- SfxPickaxeSwing
+- SfxRockHit
+- SfxRockDestroyed
+ 
 
 ### Crossplay <span class="checked">✔</span>
 | Point of View               | Server w/ Mod                   | Server w/o Mod                  | Client (PC) w/ mod              | Client (PC/Console) w/o mod     |
